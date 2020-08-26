@@ -17,8 +17,7 @@ class Home extends Component{
             })
     } */
     render(){
-        console.log(this.props);
-        const { posts } = this.props;
+        const { posts } = this.state;
         const postList = posts.length ? (
             posts.map(post => {
                 return (
@@ -47,10 +46,6 @@ class Home extends Component{
 }
 
 
-const mapStateToProps = (state) =>{
-    return{
-        posts: state.posts
-    }
-}
- 
-export default connect(mapStateToProps)(Home)
+const mapStateToProps
+
+export default connect()(Home)
